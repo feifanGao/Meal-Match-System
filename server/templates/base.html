@@ -1,0 +1,309 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Gourmet burger System!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        div{
+            color: aqua;
+            margin-left: 40px;
+        }
+
+        .tab{
+            margin-left: 200px;
+            font-size: 20pt;
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+<div class="nav-wrapper">
+    <a href="#!" class="brand-logo center">JDB's burger shop</a>
+    <ul class="left hide-on-med-and-down">
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('Mains') }}">Mains</a></li>
+    <li><a href="{{ url_for('Order') }}">My Order</a></li>
+    </ul>
+</div>
+</nav>
+
+
+<br>
+
+
+{% block body %}{% endblock %}
+
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-amber.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+div {
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+  
+  
+  
+}
+
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+</style>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#common ingrdients" onclick="w3_close()" class="w3-bar-item w3-button">ingredients</a>
+  <a href="#fruit" onclick="w3_close()" class="w3-bar-item w3-button">Fruit</a>
+  <a href="#invegetable" onclick="w3_close()" class="w3-bar-item w3-button">Vegetable</a>
+  <a href="#Meat" onclick="w3_close()" class="w3-bar-item w3-button">Meat</a>
+  <a href="#Diary" onclick="w3_close()" class="w3-bar-item w3-button">Diary</a>
+</nav>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-right" style="display:none;z-index:2;width:0%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#common ingrdients" onclick="w3_close()" class="w3-bar-item w3-button">Food</a>
+  <a href="#fruit" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#invegetable" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#Meat" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#Diary" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+</nav>
+
+
+
+
+
+<div class="form-popup" id="myForm" style="display:none;">
+  <form action="/action_page.php" class="form-container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Login</button>
+    
+    <button type="submit" class="btn">Register</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+
+
+
+<div class="w3-row w3-padding w3-theme-I3 w3-xlarge">
+<div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+  <div class="w3-quarter">
+    <div class="w3-bar">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    
+    
+      <a href="#home" class="w3-bar-item w3-button">Nubility Mealmatch</a>
+      
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <input type="text" class="w3-amber1 w3-border-1 w3-padding" style="width:100%">
+  </div>
+
+  <div class="w3-quarter">
+    <div class=" w3-bar w3-xlarge">
+      <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-right" onclick="openForm()" >
+      <img class="w3-hide-small w3-circle" src="img_avtar.jpg" style="height:40px;"></a>
+    </div>
+
+  </div>
+</div>
+
+<div class=" w3-theme-d w3-center w3-padding-16" style="w3-center w3-padding-16 ">
+  <h1>Common ingredients</h1>
+</div>
+
+<div class="w3-row-padding w3-theme">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-roast-beef-horizontal-1540505165.jpg?crop=1.00xw:0.752xh;0.00142xw,0.0427xh&resize=980:*" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
+      <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
+      <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+  
+    <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-roast-beef-horizontal-1540505165.jpg?crop=1.00xw:0.752xh;0.00142xw,0.0427xh&resize=980:*" alt="Sandwich" style="width:100%">
+      <h3>The Perfect Sandwich, A Real NYC Classic</h3>
+      <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/steak.jpg" alt="Steak" style="width:100%">
+      <h3>Let Me Tell You About This Steak</h3>
+      <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/cherries.jpg" alt="Cherries" style="width:100%">
+      <h3>Cherries, interrupted</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <p>What else?</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="/w3images/wine.jpg" alt="Pasta and Wine" style="width:100%">
+      <h3>Once Again, Robust Wine and Vegetable Pasta</h3>
+      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+    </div>
+  </div>
+  
+  
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+
+</div>
+<div class="w3-container w3-theme-d4">
+<p class="w3-large">Nubility</p>
+</div>
+
+<script>
+
+
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+
+
+</body>
+</html>
