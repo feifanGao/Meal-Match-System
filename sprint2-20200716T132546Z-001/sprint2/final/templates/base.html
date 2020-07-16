@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-amber.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<body>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+
+
+.w3-sidebar {
+  z-index: 3;
+  width: 250px;
+  top: 200px;
+  bottom: 0;
+  height: inherit;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+
+
+
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: ;
+}
+
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: white;
+}
+
+div {
+  background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+.register {
+    background-color: #4CAF50;
+  color: white;
+  padding: 10px 10px;
+  border: 1px;
+  cursor: pointer;
+  width: 10%;
+  margin-bottom:10px;
+  opacity: 0.8;
+
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.box1 {
+background-color: #eee;
+
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+
+
+
+
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+</style>
+
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Close Menu</a>
+  <a href="#common ingrdients" onclick="w3_close()" class="w3-bar-item w3-button">ingredients</a>
+  <a href="#fruit" onclick="w3_close()" class="w3-bar-item w3-button">Fruit</a>
+  <a href="#invegetable" onclick="w3_close()" class="w3-bar-item w3-button">Vegetable</a>
+  <a href="#Meat" onclick="w3_close()" class="w3-bar-item w3-button">Meat</a>
+  <a href="#Diary" onclick="w3_close()" class="w3-bar-item w3-button">Diary</a>
+</nav>
+
+
+
+
+
+
+
+
+
+<div class="w3-row w3-padding w3-theme-I3 w3-xlarge">
+<div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+  <div class="w3-quarter">
+    <div class="w3-bar">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">?</div>
+
+
+      <a href="{{ url_for('home') }}" class="w3-bar-item w3-button">Nubility Mealmatch</a>
+
+    </div>
+  </div>
+
+  <div class="w3-half">
+    <input type="text" class="w3-amber1 w3-border-1 w3-padding" style="width:100%">
+  </div>
+
+  <div class="w3-quarter">
+    <div class=" w3-bar w3-xlarge">
+
+      <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i></a>
+      <a href="{{ url_for('Register') }}" class="w3-button w3-black w3-padding-small w3-small w3-medium">REGISTER</a>
+      <a href="{{ url_for('Login') }}" class="w3-button w3-black w3-padding-small w3-small w3-medium">LOGIN</a>
+      <a href="#" class="w3-bar-item w3-button w3-right" onclick="openForm()" >
+      <img class="w3-hide-small w3-circle" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTr6goZK1uUAAowZoFE_RE3wnJb0tM43Nan2g&usqp=CAU" style="height:40px;"></a>
+    </div>
+
+  </div>
+
+  
+</div>
+
+<div class=" w3-theme-d w3-center w3-padding-16">
+  <h1>Take a look at the ingredients you like!</h1>
+</div>
+
+<div class="w3-row-padding w3-theme">
+
+
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <script
+    type="text/javascript"
+    src="//code.jquery.com/jquery-1.9.1.js"
+
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+  <style id="compiled-css" type="text/css">
+
+    /* EOS */
+  </style>
+
+  <script id="insert"></script>
+
+
+</head>
+<body>
+
+
+
+
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l1 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Category</b></h4>
+
+
+<form action="/action_page.php">
+
+
+<button type="button" class="collapsible">Diary</button>
+<div class="content">
+
+  <br>
+  <div class="custom-control custom-checkbox mb-3" class="w3-quarter">
+  <input class="custom-control-input" type="checkbox" id="v1" name="v1" value="milk">
+  <label class="custom-control-label" for="v1"> milk</label>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="v2" name="v2" value="egg">
+  <label class="custom-control-label" for="v2"> egg</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="v3" name="v3" value="butter">
+  <label class="custom-control-label" for="v3"> butter</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="v4" name="v4" value="ice_cream">
+  <label class="custom-control-label" for="v4"> ice cream</label><br>
+  </div>
+
+<script>
+$("#cA").change(function (event) {
+    localStorage.setItem("cA",$("#cA").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v1").change(function (event) {
+    localStorage.setItem("v1",$("#v1").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v2").change(function (event) {
+    localStorage.setItem("v2",$("#v2").is(":checked"));
+});
+  </script>
+
+
+  <script>
+$("#v3").change(function (event) {
+    localStorage.setItem("v3",$("#v3").is(":checked"));
+});
+  </script>
+
+    <script>
+$("#v4").change(function (event) {
+    localStorage.setItem("v4",$("#v4").is(":checked"));
+});
+  </script>
+
+
+
+
+  <br>
+
+  <br> <br>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+<button type="button" class="collapsible">Vegetables</button>
+<div class="content">
+
+  <br>
+  <div class="custom-control custom-checkbox mb-3" class="w3-quarter">
+  <input class="custom-control-input" type="checkbox" id="D1" name="D1" value="lettuce">
+  <label class="custom-control-label" for="D1"> lettuce</label>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="D2" name="D2" value="mushroom">
+  <label class="custom-control-label" for="D2"> mushroom</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="D3" name="D3" value="onion">
+  <label class="custom-control-label" for="D3"> onion</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="D4" name="D4" value="beans">
+  <label class="custom-control-label" for="D4"> beans</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="D5" name="D5" value="broccolini">
+  <label class="custom-control-label" for="D5"> broccolini</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="D6" name="D6" value="potato">
+  <label class="custom-control-label" for="D6"> potato</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="D7" name="D7" value="carrot">
+  <label class="custom-control-label" for="D7"> carrot</label><br>
+  </div>
+
+
+
+  <script>
+$("#v1").change(function (event) {
+    localStorage.setItem("D1",$("#D1").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v2").change(function (event) {
+    localStorage.setItem("D2",$("#D2").is(":checked"));
+});
+  </script>
+
+
+  <script>
+$("#v3").change(function (event) {
+    localStorage.setItem("D3",$("#D3").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v4").change(function (event) {
+    localStorage.setItem("D4",$("#D4").is(":checked"));
+});
+  </script>
+
+  
+
+
+
+
+  <br>
+  <br> <br>
+
+
+
+</div>
+
+
+
+
+<button type="button" class="collapsible">Fruits</button>
+<div class="content">
+
+
+  <br>
+  <div class="custom-control custom-checkbox mb-3" class="w3-quarter">
+  <input class="custom-control-input" type="checkbox" id="F1" name="F1" value="lemon">
+  <label class="custom-control-label" for="F1"> lemon</label>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="F2" name="F2" value="peach">
+  <label class="custom-control-label" for="F2"> peach</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="F3" name="F3" value="avocado">
+  <label class="custom-control-label" for="F3"> avocado</label><br>
+  </div>
+
+
+<script>
+$("#cA").change(function (event) {
+    localStorage.setItem("cA",$("#cA").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v1").change(function (event) {
+    localStorage.setItem("v1",$("#v1").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v2").change(function (event) {
+    localStorage.setItem("v2",$("#v2").is(":checked"));
+});
+  </script>
+
+
+  <script>
+$("#v3").change(function (event) {
+    localStorage.setItem("v3",$("#v3").is(":checked"));
+});
+  </script>
+
+    <script>
+$("#v4").change(function (event) {
+    localStorage.setItem("v4",$("#v4").is(":checked"));
+});
+  </script>
+
+
+
+
+  <br>
+  <br> <br>
+
+
+
+</div>
+
+
+
+
+<button type="button" class="collapsible">Meats</button>
+<div class="content">
+
+
+  <br>
+  <div class="custom-control custom-checkbox mb-3" class="w3-quarter">
+  <input class="custom-control-input" type="checkbox" id="M1" name="M1" value="salmon">
+  <label class="custom-control-label" for="M1"> salmon</label>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="M2" name="M2" value="bacon">
+  <label class="custom-control-label" for="M2"> bacon</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="M3" name="M3" value="chicken">
+  <label class="custom-control-label" for="M3"> chicken</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="M4" name="M4" value="turkey">
+  <label class="custom-control-label" for="M4"> turkey</label><br>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="M5" name="M5" value="beef">
+  <label class="custom-control-label" for="M5"> beef</label><br>
+  </div>
+
+<script>
+$("#cA").change(function (event) {
+    localStorage.setItem("cA",$("#cA").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v1").change(function (event) {
+    localStorage.setItem("v1",$("#v1").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v2").change(function (event) {
+    localStorage.setItem("v2",$("#v2").is(":checked"));
+});
+  </script>
+
+
+  <script>
+$("#v3").change(function (event) {
+    localStorage.setItem("v3",$("#v3").is(":checked"));
+});
+  </script>
+
+    <script>
+$("#v4").change(function (event) {
+    localStorage.setItem("v4",$("#v4").is(":checked"));
+});
+  </script>
+
+
+
+
+  <br>
+  <br> <br>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+<button type="button" class="collapsible">Panty</button>
+<div class="content">
+
+  <br>
+  <div class="custom-control custom-checkbox mb-3" class="w3-quarter">
+  <input class="custom-control-input" type="checkbox" id="P1" name="P1" value="spaghetti">
+  <label class="custom-control-label" for="P1"> spaghetti</label>
+  </div>
+
+  <div class="custom-control custom-checkbox mb-3">
+  <input class="custom-control-input" type="checkbox" id="P2" name="P2" value="rice">
+  <label class="custom-control-label" for="P2"> rice</label><br>
+  </div>
+
+
+<script>
+$("#cA").change(function (event) {
+    localStorage.setItem("cA",$("#cA").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v1").change(function (event) {
+    localStorage.setItem("v1",$("#v1").is(":checked"));
+});
+  </script>
+
+  <script>
+$("#v2").change(function (event) {
+    localStorage.setItem("v2",$("#v2").is(":checked"));
+});
+  </script>
+
+
+  <script>
+$("#v3").change(function (event) {
+    localStorage.setItem("v3",$("#v3").is(":checked"));
+});
+  </script>
+
+    <script>
+$("#v4").change(function (event) {
+    localStorage.setItem("v4",$("#v4").is(":checked"));
+});
+  </script>
+
+
+
+
+  <br>
+  <br> <br>
+
+
+
+
+
+
+</div>
+
+
+<br>
+<input type="submit" value="Submit" class="btn btn-primary">
+<br> <br>
+
+
+
+
+ </form>
+
+  <br> <br> <br> <br> <br>
+
+
+  <a class="w3-bar-item w3-container w3-hover-black box1" id="additionalServices" >Running list</a>
+  <div ></div>
+</nav>
+
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food" style="margin-left:250px">
+    <div class="w3-quarter">
+      <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/delish-roast-beef-horizontal-1540505165.jpg?crop=1.00xw:0.752xh;0.00142xw,0.0427xh&resize=980:*" alt="Sandwich" style="width:100%">
+      <h3>Beef</h3>
+      <p>Most beef skeletal muscle meat can be used as is by merely cutting into certain parts, such as roasts, short ribs or steak</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://pyxis.nymag.com/v1/imgs/750/aa9/03eba683f85b43aa49b9da53a1b36635ef-24-gmo-arctic-apple.2x.rsocial.w600.jpg" alt="Steak" style="width:100%">
+      <h3>Apple</h3>
+      <p>A raw apple is 86% water and 14% carbohydrates, with negligible content of fat and protein.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://content.fortune.com/wp-content/uploads/2018/07/raw-chicken-e1532448075688.jpg?resize=1200,600" alt="Cherries" style="width:100%">
+      <h3>Chicken</h3>
+      <p>Chicken generally includes low fat in the meat itself (castrated roosters excluded). The fat is highly concentrated on the skin.</p>
+
+    </div>
+    <div class="w3-quarter">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRnICyYfQMaZsZfkwqSktBSn598HBCPfl67MQ&usqp=CAU" alt="Pasta and Wine" style="width:100%">
+      <h3>Milk</h3>
+      <p>The composition of milk differs widely among species. Factors such as the type of protein; the proportion of protein, fat, and sugar; the levels of various vitamins and minerals;</p>
+    </div>
+  </div>
+
+    <!-- second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="food" style="margin-left:250px">
+    <!-- <div class="w3-quarter">
+      <img src="http://img5.imgtn.bdimg.com/it/u=1733763850,39763477&fm=15&gp=0.jpg" alt="Sandwich" style="width:100%">
+      <h3>Bacon</h3>
+      <p>One 10-g slice of cooked side bacon contains 4.5 g of fat, 3.0 g of protein, and 205 mg of sodium</p>
+    </div> -->
+    <div class="w3-quarter">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSL0EtTYGvIpyp9l6al4_vmSUBGn3H4lSNllg&usqp=CAU" alt="Steak" style="width:100%">
+      <h3>Broccoli</h3>
+      <p>It is eaten raw or cooked. Broccoli is a particularly rich source of vitamin C and vitamin K. </p>
+    </div>
+    <div class="w3-quarter">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRSNDI-7zNmINS_P-RlaidyTBcbfXY0Z9QrcA&usqp=CAU" alt="Cherries" style="width:100%">
+      <h3>Salmon</h3>
+      <p>Salmon is considered to be healthy due to the fish's high protein, high omega-3 fatty acids, and high vitamin D content. Salmon is also a source of cholesterol.</p>
+    </div>
+
+  </div>
+
+
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="{{ url_for('home') }}" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="{{ url_for('page2') }}" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+
+
+</div>
+<div class="w3-container w3-theme-d4">
+<p class="w3-large">Nubility</p>
+</div>
+
+<script>
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+
+}
+
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+
+</script>
+
+    <script type="text/javascript">//<![CDATA[
+
+
+/*when a user selects interest in an addtional service, add this to the additionalServices div*/
+$('input[type="checkbox"]').bind('change', function() {
+    var alsoInterested = '';
+    $('input[type="checkbox"]').each(function(index, value) {
+        if (this.checked) {
+            /*add*/ /*get label text associated with checkbox*/
+            alsoInterested += ($('label[for="'+this.name+'"]').html() + ', ');
+        }
+    });
+    if (alsoInterested.length > 0) {
+        alsoInterested = 'I have chosen: ' + alsoInterested.substring(0,alsoInterested.length-2) + '.';
+    } else {
+        alsoInterested = 'Nothing in list.';
+    }
+
+    $('#additionalServices').html(alsoInterested);
+    //console.log($('#additionalServices').html());
+});
+
+
+  //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "W37rB"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+<input id="cA" type="checkbox" />A
+
+<script>
+$("#cA").change(function (event) {
+    localStorage.setItem("cA",$("#cA").is(":checked"));
+});
+  </script>
+
+</body>
+</html>
