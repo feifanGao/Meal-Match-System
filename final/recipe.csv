@@ -1,0 +1,14 @@
+name,type,ingredients,cooktime,hints,contributor
+hot milk,breakfast,milk,5 mins,boil for 5 mins,sys
+cold milk,breakfast,milk,5 mins,add ice to milk,sys
+sweet milk,breakfast,milk,2mins,add sugar to milk,sys
+boiled egg,breakfast,egg,5 mins,put eggs in boiled water and wait for 5 minutes,sys
+fry egg,lunch,egg,6 mins,fry egg in pan with oil and salt for until egg become solid,sys
+shake,snack,milk ice_cream,10 mins,melt ice cream and add it to milk,sys
+pudding,snack,milk egg butter,20 mins, mix milk butter and eggs togher and bake it for 20mins,sys
+lemon chicken,lunch,lemon chicken,15 mins,cook,sys
+salmon with bacon and mustard cream sause,dinner,butter mushroom onion salmon bacon,30 mins,cook,sys
+mexican beef style wrap,dinner,onion beans avocado beef,20 mins,cook,sys
+Tender beef stir-fry with brown rice,dinner,onion beans broccolini beef,50 mins,cook brown rice according to packet instructions and divide brown rice between plates and top with stir-fried beef,sys
+Salt-Cooked Salmon,dinner,salmon,10 mins,Season the salmon with a little salt and the pepper and our the remaining salt into a large cast-iron skillet,sys
+Slow cooker creamy chicken carbonara,dinner,egg bacon chicken spaghetti,10 mins,Toss to combine. Sprinkle with remaining parmesan. Serve with salad leaves.,sys
