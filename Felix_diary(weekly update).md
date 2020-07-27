@@ -22,3 +22,24 @@
 2. set due date for each sprint1 task
 3. distribute work for each member 
 4. prepare working demo
+5. brainstorm actual interface
+6. discuss data structure details
+7. develop basic login system
+
+**Week 5**
+Summery: First demo with user login&register and basic interface
+1. discuss and build interface layout(buttons, text and menu type)
+2. finalise user credentials
+3. make plan for presentation workflow
+
+**Week 7&8**
+Summery: First retrospective and 2nd Demo
+1. Apply running list for users
+2. Apply categories for different ingredients
+3. Apply files for data storage(user.csv, recipe.csv)
+
+**Week 9**
+Summery: Add functions for contributors
+1. Now contributors can upload new recipes
+2. Now contributors can delete their recipes
+3. Now contributors can view all recipes they uploaded in myrecipe page
