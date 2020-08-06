@@ -7,6 +7,7 @@ Our MealMatch system is built for individual clients inexperienced with recipes,
 
 ### How to use it
 To run this software, in the root directory of your repository:
+
 ```python3 run.py```
 
 *Visit the website:*
