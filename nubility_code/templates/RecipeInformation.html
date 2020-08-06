@@ -417,6 +417,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   {% for key, value in result.items() %}
   <h3 class="w3-center"> Here is the recipe for {{value['aname']}} !</h3>
   <h5 class="w3-center"><em>This recipe is contributed by {{value['contributor']}} </em><h5><br><br>
+  <h3 class="w3-center">Type: {{value['type']}} </h3><br>
   <h3 class="w3-center">Ingredients: {{value['ingredients']}} </h3><br>
  <h3 class="w3-center">Cooktime: {{value['cooktime']}} </h3><br>
  <h3 class="test">Hints: {{value['hint']}} </p ><h3> <br> <br>
