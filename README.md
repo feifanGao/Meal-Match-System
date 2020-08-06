@@ -1,5 +1,5 @@
 # capstone-project-nubility
-Nubility
+Team Nubility
 comp3900 project
 
 ## README
@@ -7,11 +7,14 @@ Our MealMatch system is built for individual clients inexperienced with recipes,
 
 ### How to use it
 To run this software,in the root directory of your repository:
-
-```$python3 run.py```
+```python3 run.py```
 
 *Visit the website:*
 http://127.0.0.1:5000/
 
 ### Contributor:
-z5158224 z5158409 z5158318 z5158278 z5158140
+z5158224 
+z5158409 
+z5158318 
+z5158278 
+z5158140
