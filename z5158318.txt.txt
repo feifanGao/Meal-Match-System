@@ -1,0 +1,104 @@
+Weekly diary  
+
+
+
+RUIXIAN LIU z5158318  
+
+Week1:  
+
+1. group formed  
+
+2. project chosen  
+
+3. weekly meeting time decided  
+
+4. programming language decided  
+
+  
+
+Week2:  
+
+1.   Weekly meeting  
+
+2.   Discuss the aim of the project  
+
+3.   Find similar website and discuss its advantages and drawbacks  
+
+4.   Discuss user stories  
+
+  
+
+Week3  
+
+1.   write user stories and sprints  
+
+2.   Draw workflow and user interface  
+
+3.   Discuss what to do next  
+
+  
+
+Week4  
+
+1.   We discussed what to do for sprint 1 and what will our interface looks like  
+
+2.   We divide the work of our project into backend and frontend. And I am the member of  
+
+     Backend team  
+
+  
+
+Week5  
+
+1.   backend and frontend functions are almost done.  
+
+2.   We worked together to make sure it can run on the web  
+
+3.   We start to prepare for the demo on the tutorial.  
+
+  
+
+Week6  
+
+1    We started sprint2 – explorer functions  
+
+2    We divide the work of our project into backend and frontend. And I am the member of  
+
+     Backend team  
+
+  
+
+Week7  
+
+1.   We are working on the functions for user can search recipes by ingredients  
+
+2.   We also talking about the feedback from the tutor from the demo in week5 and discuss  
+
+     what to do next.  
+
+3.   Writing reports  
+
+  
+
+
+Week 8  
+
+ 1.   Explorer functions almost done and we start to work on sprint3 contributor functions  
+
+ 2.   First important function is to add recipes  
+
+ 3.   Another function is to list contributors recipes and edit it  
+
+Week 9
+1.   All back end and front end almostly ended.
+
+2.  Discuss about the final project and presentation.
+
+        
+
+  
+
+  
+
+  
+
