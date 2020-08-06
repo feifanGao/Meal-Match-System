@@ -23,7 +23,7 @@ def recipe(ingredients):
     id = 0
     for i in r:
         ingredient_need = list(i[2].split(" "))
-        if(ingre < set(ingredient_need)):
+        if(ingre <= set(ingredient_need)):
             id = id + 1
             result = {}
             result['aname'] = i[0]
