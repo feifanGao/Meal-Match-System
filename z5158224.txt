@@ -1,0 +1,55 @@
+Week1:
+Form our group and choose our project topic
+With my team choose weekly meetings
+Decide what techniques we should apply for our application
+
+
+Week2:
+As scrum master create a online WeChat discussion group
+Organize discussions and meetings
+Set our goal clear
+Find similar mealmatch system to learn from
+Analyze different web pages
+Discuss and write our user stories
+
+Week3:
+Design our sprint, put our goals into sprint
+Find css and html tutorials online
+Update the user story and other detailed information 
+
+
+Week4:
+Design the interface of our system
+Do front-end design and several html pages
+Better understand the relation between the front-end and back-end in our project
+Design first version for our main page
+
+Week5:
+Design front-end login
+Design the main page for the website,
+add pictures at our main page
+Make new work distribution for sprint 2
+
+Week7:
+Add running list to our application
+Add some more recipes
+Add a search function
+Make the register login available to use
+
+Week8:
+Design front end for contributor
+Add list of recipes
+Follow the requirements and sprint3 and 4
+
+Week9:
+Contributor can actually contribute
+Update our register and login system
+Add delete function for contributor
+Make recipe information more detailed
+
+
+
+
+
+
+
