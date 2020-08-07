@@ -34,17 +34,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
   height: inherit;
 }
 
-.collapsible {
-  background-color: #777;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-}
 
 .position {
 position: relative;
@@ -124,28 +113,6 @@ background-color: #eee;
 
 }
 
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 22px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Hide the browser's default checkbox */
-.container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-  height: 0;
-  width: 0;
-}
-
 h3.test{
   white-space: wrap; 
   width: 20em; 
@@ -156,14 +123,6 @@ h3.test{
   text-align: left;
 }
 
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 25px;
-  width: 25px;
-  background-color: #eee;
-}
 
 
 
@@ -209,10 +168,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-quarter">
     <div class=" w3-bar w3-xlarge">
 
-      <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i></a>
+    
       <a href="{{ url_for('Register') }}" class="w3-button w3-black w3-padding-small w3-small w3-medium">REGISTER</a>
       <a href="{{ url_for('Login') }}" class="w3-button w3-black w3-padding-small w3-small w3-medium">LOGIN</a>
-      <a href="#" class="w3-bar-item w3-button w3-right" onclick="openForm()" >
       <img class="w3-hide-small w3-circle" ></a>
     </div>
 

@@ -41,13 +41,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
   box-sizing: border-box;
 }
 
-/* Add padding to containers */
-.container {
-  padding: 16px;
-  background-color: white;
-}
 
-/* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;
@@ -62,13 +56,12 @@ input[type=text]:focus, input[type=password]:focus {
   outline: none;
 }
 
-/* Overwrite default styles of hr */
+
 hr {
   border: 1px solid #f1f1f1;
   margin-bottom: 25px;
 }
 
-/* Set a style for the submit button */
 .registerbtn {
   background-color: #4CAF50;
   color: white;
@@ -84,12 +77,12 @@ hr {
   opacity: 1;
 }
 
-/* Add a blue text color to links */
+
 a {
   color: dodgerblue;
 }
 
-/* Set a grey background color and center the text of the "sign in" section */
+
 .signin {
   background-color: #f1f1f1;
   text-align: center;
@@ -139,9 +132,7 @@ a {
   <div class="w3-quarter">
     <div class=" w3-bar w3-xlarge">
 
-      <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i></a>
       <a href="{{ url_for('Register') }}" class="w3-button w3-black w3-padding-small w3-small w3-medium">REGISTER</a>
-      <a href="#" class="w3-bar-item w3-button w3-right" onclick="openForm()" >
       <img class="w3-hide-small w3-circle"></a>
     </div>
 

@@ -117,24 +117,6 @@ h3.test{
   right: 28px;
   width: 280px;
 }
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 15px;
-  border: 3px solid #f1f1f1;
-  z-index: 9;
-}
-
-
-/* Add styles to the form container */
-.form-container {
-  max-width: 300px;
-  padding: 10px;
-}
-
 div {
   background-color: white;
 }
@@ -334,7 +316,6 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
   <div class="w3-quarter">
     <div class=" w3-bar w3-xlarge">
 
-      <a href="#" class="w3-bar-item w3-button w3-left"><i class="fa fa-search"></i></a>
       <a href="{{ url_for('Register') }}" class="w3-button w3-black w3-padding-small w3-small w3-medium">REGISTER</a>
       <a href="{{ url_for('Login') }}" class="w3-button w3-black w3-padding-small w3-small w3-medium">LOGIN</a>
       <a href="#" class="w3-bar-item w3-button w3-right" onclick="openForm()" >
@@ -876,14 +857,6 @@ for (i = 0; i < coll.length; i++) {
 }
 
 
-function openForm() {
-  document.getElementById("myForm").style.display = "block";
-}
-
-function closeForm() {
-  document.getElementById("myForm").style.display = "none";
-}
-
 </script>
 
     <script type="text/javascript">
@@ -913,20 +886,7 @@ $('input[type="checkbox"]').bind('change', function() {
 
 
 
-<script>
-$("#cA").change(function (event) {
-    localStorage.setItem("cA",$("#cA").is(":checked"));
-});
-  </script>
 
- <script>
-function onClick(element) {
-  document.getElementById("img01").src = element.src;
-  document.getElementById("modal01").style.display = "block";
-  var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
-}
-</script>
 
 </body>
 </html>
