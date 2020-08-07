@@ -1,5 +1,9 @@
 # capstone-project-nubility
 Team Nubility
+
+F11A
+Tutor: Maryam
+
 comp3900 project
 
 ## README
