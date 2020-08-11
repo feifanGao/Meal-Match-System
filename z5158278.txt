@@ -1,0 +1,60 @@
+Week1
+1. Group formed  
+2. I selected the topic of project with my team  
+3. I scheduled the weekly meeting with my team   
+4. I decided the related technology to be used for our project
+5. I planned to discuss the user stories next week
+
+Week2
+1. I had a meeting with my group members
+2. I set the timeline ang goals of our project with my group
+3. I searched and discussed similar MealMatch system  
+4. I planned to finish all user stories next week
+
+Week3  
+1. I finished writing user stories 
+2. I set the sprints at Jira
+3. I edited the proposal with group members
+4. I planned to start functions implementation  
+
+Week4  
+1. I discussed and designed the user interface of our project
+2. I discussed with group member to distribute the work into back-end part and front-end part
+3. I search and learn the type of database in use for other projects
+4. I planned to implement database and back-end functions next week
+
+Week5  
+1. I implemented csv file for data storage
+2. I implemented login and register functions together with group members
+3. I checked with group members to make sure the project could run smoothly
+4. I start to prepare the Progressive Demo A
+5. I planned to start the sprint 2
+
+Week6  
+1. I reviewed and upgrade the user stories and functions in sprint 1 
+2. I distribute the work of sprint 2 with group members
+3. I planned to implement functions for explorer 
+
+Week7  
+1. I implemented the function of running list
+2. I added s series of ingredients and recipes  
+3. I implemented function of searching recipes
+4. I planned to implement suggestion system for explorer
+
+Week 8  
+1. I started to implement suggestion system 
+2. I discussed the functions for contributor with group members 
+3. I prepare for Progressive Demo B
+4. I distribute the work of sprint 3 and sprint 4
+5. I planned to complete all functions
+
+Week 9
+1. I completed all functions for contributors with group members
+2. I added more ingredients and recipes
+3. I started to write project reports
+4. I planned to review and upgrade our system
+
+Week 10
+1. I completed and upgraded all functions for our system
+2. I finish the project report
+3. I start to prepare for Project Demonstration
